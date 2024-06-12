@@ -23,3 +23,5 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             ls -al
+            cd thiet-ke-web/
+            git fetch --all
