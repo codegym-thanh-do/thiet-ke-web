@@ -16,8 +16,8 @@ jobs:
       - name: Set up SSH for development server
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.USER}}
-          username: ${{ secrets.HOT_NAME }}
+          host: ${{ secrets.HOT_NAME}}
+          username: ${{ secrets.USER }}
           key: ${{ secrets.PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
           script: |
